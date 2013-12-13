@@ -1,0 +1,50 @@
+body {
+    background: #333333;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../images/dots.png") repeat;
+    z-index: 9;
+}
+
+#countdown {
+    width: 603px;
+    height: 150px;
+    position: absolute;
+    z-index: 10;
+}
+
+#countdown * {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#countdown > section {
+    float: left;
+    width: 150px;
+    border-right: #ffffff dashed 1px;
+}
+
+#countdown > section:last-child {
+    border-right: none;
+}
+
+#countdown .label {
+    font-size:25px;
+}
+
+#countdown .value {
+    font-size: 80px;
+    height: 90px;
+}
